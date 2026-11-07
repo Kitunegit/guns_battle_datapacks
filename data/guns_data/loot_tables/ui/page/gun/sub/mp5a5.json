@@ -1,0 +1,20 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ui:hk_mp5a5,faild:false,GunId:\"tacz:hk_mp5a5\",HasBulletInBarrel:1b,GunFireMode:\"AUTO\",GunCurrentAmmoCount:29}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

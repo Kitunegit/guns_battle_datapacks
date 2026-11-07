@@ -13,6 +13,7 @@
     execute as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/blank
     execute as @s[scores={UI.Shop.Page=0}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/0
     execute as @s[scores={UI.Shop.Page=1}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/1
+    execute as @s[scores={UI.Shop.Page=2}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/2
 
 # リセット
     scoreboard players reset $UUID Temporaty

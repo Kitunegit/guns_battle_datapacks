@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tacz:modern_kinetic_gun",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "左クリックで選択。",
+                  "color": "gray",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": true
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "アサルトライフル",
+                "color": "white",
+                "bold": true,
+                "italic": false,
+                "underlined": true
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{ui:gun_assault,faild:false,GunId:\"tacz:ak47\"}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

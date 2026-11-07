@@ -35,3 +35,17 @@ bossbar set count_red max 400
 
 scoreboard objectives add Death_timer dummy
 scoreboard objectives add Death_timer dummy
+
+# UI用のシュルカーボックスを0 0 0に設置する
+    setblock 0 0 0 white_shulker_box
+
+# シュルカーボックスを常時読み込む
+    forceload add 0 0 0 0
+
+# UIシステム用スコア
+    scoreboard objectives add UI.Shop.Timer dummy "チェスト付きトロッコのkillタイマー"
+    scoreboard objectives add UUID dummy "識別用ID"
+    scoreboard objectives add Temporaty dummy "一時保管用"
+    scoreboard objectives add UI.Shop.Page dummy "ショップページ"
+    scoreboard objectives add UI.Shop.Blank.Click dummy "ショップクリック"
+    scoreboard objectives add UI.Shop.Gun.Click dummy "ショップクリック"

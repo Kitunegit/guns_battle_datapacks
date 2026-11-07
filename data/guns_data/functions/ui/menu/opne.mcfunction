@@ -4,8 +4,12 @@
 # ページ
     scoreboard players set @s UI.Shop.Page 0
 
+# UI閉じ検知用の処理
+    execute unless predicate guns_data:armor/helmet run item replace entity @s armor.head with minecraft:stone_button
+    item modify entity @s armor.head guns_data:close_detector/add
+
 # 専用のtag付け
-    tag @s add ui_opne
+    tag @s add ui_open
 
 # トロッコとプレイヤーを紐付ける
     execute positioned ~ ~1.2 ~ run scoreboard players operation @e[type=chest_minecart,tag=shop_ui,sort=nearest,limit=1,scores={UI.Shop.Timer=-1}] UUID = @s UUID

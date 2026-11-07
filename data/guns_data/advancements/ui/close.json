@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "nbt": "{ui:{close_detector:1b}}"
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "guns_data:ui/menu/close"
+  }
+}

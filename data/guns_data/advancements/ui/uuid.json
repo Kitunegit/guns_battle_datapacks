@@ -1,0 +1,10 @@
+{
+  "criteria": {
+    "jouken": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "function": "guns_data:ui/uuid"
+  }
+}

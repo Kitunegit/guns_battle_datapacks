@@ -1,2 +1,2 @@
 # プレイヤーにチェスト付きトロッコを被せる
-    summon chest_minecart ~ ~1.2 ~ {CustomName:'{"text":"SHOP!!"}',CustomNameVisible:false,Tags:["shop_ui"]}
+    summon chest_minecart ~ ~1.2 ~ {CustomName:'{"text":"","italic":false,"color":"white"}',CustomNameVisible:false,Tags:["shop_ui"],CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}

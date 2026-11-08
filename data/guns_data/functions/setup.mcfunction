@@ -48,6 +48,7 @@ scoreboard objectives add Death_timer dummy
     scoreboard objectives add Temporaty dummy "一時保管用"
     scoreboard objectives add UI.Shop.Page dummy "ショップページ"
     scoreboard objectives add UI.Shop.Blank.Click dummy "ショップクリック"
+    scoreboard objectives add UI.Shop.Blank1.Click dummy "ショップクリック"
     scoreboard objectives add UI.Shop.Gun.Click dummy "ショップクリック"
     scoreboard objectives add UI.Shop.Armor.Click dummy "ショップクリック"
     scoreboard objectives add UI.Shop.Armor.Chain.Click dummy "ショップクリック"

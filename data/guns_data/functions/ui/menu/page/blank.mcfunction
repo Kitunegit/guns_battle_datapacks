@@ -15,7 +15,7 @@
     item replace entity @s container.13 with light_gray_stained_glass_pane{ui:blank,faild:false}
     item replace entity @s container.14 with light_gray_stained_glass_pane{ui:blank,faild:false}
     item replace entity @s container.15 with light_gray_stained_glass_pane{ui:blank,faild:false}
-    item replace entity @s container.16 with light_gray_stained_glass_pane{ui:blank,faild:false}
+    item replace entity @s container.16 with heart_of_the_sea{ui:blank,faild:false}
     item replace entity @s container.17 with light_gray_stained_glass_pane{ui:blank,faild:false}
     item replace entity @s container.18 with light_gray_stained_glass_pane{ui:blank,faild:false}
     item replace entity @s container.19 with light_gray_stained_glass_pane{ui:blank,faild:false}
@@ -28,3 +28,11 @@
     item replace entity @s container.26 with light_gray_stained_glass_pane{ui:blank,faild:false}
     item replace entity @s container.27 with light_gray_stained_glass_pane{ui:blank,faild:false}
     item replace entity @s container.28 with light_gray_stained_glass_pane{ui:blank,faild:false}
+
+# 現在のクレジットを表示
+    scoreboard players operation $UUID1 Temporaty = @s UUID
+    execute as @a[tag=ui_open] if score @s UUID = $UUID1 Temporaty run scoreboard players operation $credit Temporaty = @s credit
+    item modify entity @s container.16 guns_data:ui/credit
+
+# リセット
+    scoreboard players reset $UUID1 Temporaty

@@ -1,5 +1,5 @@
 # プレイヤーにUIを表示
-    execute as @a[tag=!ui_open] at @s run function guns_data:ui/summon
+    execute as @a[tag=nandemoUI,tag=!ui_open] at @s run function guns_data:ui/summon
 
 # 時間経過でkill
     execute as @e[type=chest_minecart,tag=shop_ui] unless score @s UI.Shop.Timer matches -1 run scoreboard players add @s UI.Shop.Timer 1
@@ -7,6 +7,7 @@
 
 # クリック検知
     execute as @a[tag=ui_open] store result score @s UI.Shop.Blank.Click run clear @s light_gray_stained_glass_pane{ui:blank}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.Blank1.Click run clear @s heart_of_the_sea{ui:blank}
     execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.Click run clear @s tacz:modern_kinetic_gun{ui:gun}
     execute as @a[tag=ui_open] store result score @s UI.Shop.Armor.Click run clear @s iron_chestplate{ui:armor}
     execute as @a[tag=ui_open] store result score @s UI.Shop.Armor.Chain.Click run clear @s chainmail_chestplate{ui:armor_chain}
@@ -41,6 +42,7 @@
 
     execute at @a[tag=ui_open] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item.tag{faild:false} as @p at @s run function guns_data:ui/menu/page/click/_
     execute as @a[tag=ui_open,scores={UI.Shop.Blank.Click=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.Blank1.Click=1..}] at @s run function guns_data:ui/menu/page/click/_
     execute as @a[tag=ui_open,scores={UI.Shop.Gun.Click=1..}] at @s run function guns_data:ui/menu/page/click/_
     execute as @a[tag=ui_open,scores={UI.Shop.Armor.Click=1..}] at @s run function guns_data:ui/menu/page/click/_
     execute as @a[tag=ui_open,scores={UI.Shop.Armor.Chain.Click=1..}] at @s run function guns_data:ui/menu/page/click/_

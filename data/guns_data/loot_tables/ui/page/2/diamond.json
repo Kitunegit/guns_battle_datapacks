@@ -13,6 +13,13 @@
               "entity": "this",
               "lore": [
                 {
+                  "text": "1500G",
+                  "color": "gold",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": true
+                },
+                {
                   "text": "左クリックで選択。",
                   "color": "gray",
                   "bold": false,

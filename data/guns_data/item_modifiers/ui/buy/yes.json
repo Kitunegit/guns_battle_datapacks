@@ -1,0 +1,31 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "購入する(-$",
+      "extra": [
+        {
+          "score": {
+            "objective": "UI.Shop.Price",
+            "name": "@s"
+          },
+          "extra": [
+            {
+              "text": ")",
+              "color": "green",
+              "bold": false,
+              "italic": false
+            }
+          ],
+          "color": "green",
+          "bold": false,
+          "italic": false
+        }
+      ],
+      "color": "green",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

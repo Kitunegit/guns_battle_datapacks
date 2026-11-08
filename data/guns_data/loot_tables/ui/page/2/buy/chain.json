@@ -1,0 +1,44 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:chainmail_chestplate",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "entity": "this",
+              "lore": [
+                {
+                  "text": "800G",
+                  "color": "gold",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": true
+                }
+              ],
+              "replace": true
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "チェーン防具",
+                "color": "white",
+                "bold": true,
+                "italic": false,
+                "underlined": true
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{price:800,ui:blank,ui:armor_chain,faild:false}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

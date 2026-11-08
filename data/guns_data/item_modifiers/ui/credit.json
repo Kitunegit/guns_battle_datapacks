@@ -1,0 +1,23 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "Credit : ",
+      "extra": [
+        {
+          "score": {
+            "objective": "Temporaty",
+            "name": "$credit"
+          },
+          "color": "blue",
+          "bold": true,
+          "italic": false
+        }
+      ],
+      "color": "white",
+      "bold": true,
+      "italic": false
+    }
+  }
+]

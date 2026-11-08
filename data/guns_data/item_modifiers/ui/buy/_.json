@@ -1,0 +1,6 @@
+[
+  {
+    "function": "minecraft:set_nbt",
+    "tag": "{price:-1,ui:-1,faild:true}"
+  }
+]

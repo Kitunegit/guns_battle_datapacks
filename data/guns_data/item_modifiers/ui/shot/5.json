@@ -1,0 +1,26 @@
+[
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "text": "$",
+        "extra": [
+          {
+            "nbt": "Item.shotgun.5.tag.price",
+            "storage": "ui:",
+            "color": "red",
+            "bold": true,
+            "italic": false,
+            "underlined": true
+          }
+        ],
+        "color": "red",
+        "bold": true,
+        "italic": false,
+        "underlined": true
+      }
+    ],
+    "replace": true
+  }
+]

@@ -13,6 +13,13 @@
               "entity": "this",
               "lore": [
                 {
+                  "text": "800G",
+                  "color": "gold",
+                  "bold": false,
+                  "italic": false,
+                  "underlined": true
+                },
+                {
                   "text": "左クリックで選択。",
                   "color": "gray",
                   "bold": false,
@@ -34,7 +41,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{ui:armor_chainmail,faild:false}"
+              "tag": "{ui:armor_chain,faild:false}"
             }
           ]
         }

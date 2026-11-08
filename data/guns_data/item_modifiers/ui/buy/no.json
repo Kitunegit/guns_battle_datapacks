@@ -1,0 +1,31 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": {
+      "text": "お金が足りない(-$",
+      "extra": [
+        {
+          "score": {
+            "objective": "UI.Shop.Price",
+            "name": "@s"
+          },
+          "extra": [
+            {
+              "text": ")",
+              "color": "red",
+              "bold": false,
+              "italic": false
+            }
+          ],
+          "color": "red",
+          "bold": false,
+          "italic": false
+        }
+      ],
+      "color": "red",
+      "bold": false,
+      "italic": false
+    }
+  }
+]

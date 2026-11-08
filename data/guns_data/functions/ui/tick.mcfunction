@@ -25,7 +25,20 @@
     execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.3 run clear @s tacz:modern_kinetic_gun{ui:3}
     execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.4 run clear @s tacz:modern_kinetic_gun{ui:4}
     execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.5 run clear @s tacz:modern_kinetic_gun{ui:5}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.1 run clear @s potion{ui:1}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.2 run clear @s splash_potion{ui:2}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.3 run clear @s splash_potion{ui:3}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.4 run clear @s lrtactical:consumable{ui:4}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.5 run clear @s tacz:modern_kinetic_gun{ui:5}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.1 run clear @s lrtactical:throwable{ui:1}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.2 run clear @s lrtactical:throwable{ui:2}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.3 run clear @s lrtactical:throwable{ui:3}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.4 run clear @s lrtactical:throwable{ui:4}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.5 run clear @s lrtactical:throwable{ui:5}
     execute as @a[tag=ui_open] store result score @s UI.Shop.back run clear @s ender_pearl{ui:back}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.assist run clear @s potion{ui:assist}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.potion run clear @s potion{ui:potion}
+    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade run clear @s lrtactical:throwable{ui:grenade}
 
 # ページ設定
     execute as @a[tag=ui_open,scores={UI.Shop.Gun.Click=1..}] at @s run scoreboard players set @s UI.Shop.Page 1
@@ -39,6 +52,9 @@
     execute as @a[tag=ui_open,scores={UI.Shop.Armor.Iron.Click=1..}] at @s run scoreboard players set @s UI.Shop.Page 2002
     execute as @a[tag=ui_open,scores={UI.Shop.Armor.Diamond.Click=1..}] at @s run scoreboard players set @s UI.Shop.Page 2003
     execute as @a[tag=ui_open,scores={UI.Shop.back=1..}] at @s run scoreboard players set @s UI.Shop.Page 0
+    execute as @a[tag=ui_open,scores={UI.Shop.assist=1..}] at @s run scoreboard players set @s UI.Shop.Page 3
+    execute as @a[tag=ui_open,scores={UI.Shop.potion=1..}] at @s run scoreboard players set @s UI.Shop.Page 4
+    execute as @a[tag=ui_open,scores={UI.Shop.grenade=1..}] at @s run scoreboard players set @s UI.Shop.Page 5
 
     execute at @a[tag=ui_open] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item.tag{faild:false} as @p at @s run function guns_data:ui/menu/page/click/_
     execute as @a[tag=ui_open,scores={UI.Shop.Blank.Click=1..}] at @s run function guns_data:ui/menu/page/click/_
@@ -60,7 +76,20 @@
     execute as @a[tag=ui_open,scores={UI.Shop.Gun.3=1..}] at @s run function guns_data:ui/menu/page/click/_
     execute as @a[tag=ui_open,scores={UI.Shop.Gun.4=1..}] at @s run function guns_data:ui/menu/page/click/_
     execute as @a[tag=ui_open,scores={UI.Shop.Gun.5=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.potion.1=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.potion.2=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.potion.3=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.potion.4=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.potion.5=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.grenade.1=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.grenade.2=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.grenade.3=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.grenade.4=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.grenade.5=1..}] at @s run function guns_data:ui/menu/page/click/_
     execute as @a[tag=ui_open,scores={UI.Shop.back=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.assist=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.potion=1..}] at @s run function guns_data:ui/menu/page/click/_
+    execute as @a[tag=ui_open,scores={UI.Shop.grenade=1..}] at @s run function guns_data:ui/menu/page/click/_
 
     execute at @a[tag=ui_open] positioned ~ ~1.2 ~ as @e[type=item,distance=..1] if data entity @s Item.tag{faild:false} run kill @s
 # リセット

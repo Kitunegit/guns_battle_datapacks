@@ -30,7 +30,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "身体力増強薬",
+                "text": "補助アイテム",
                 "color": "light_purple",
                 "bold": true,
                 "italic": false,
@@ -39,7 +39,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{ui:potion,faild:false}"
+              "tag": "{ui:assist,faild:false}"
             }
           ]
         }

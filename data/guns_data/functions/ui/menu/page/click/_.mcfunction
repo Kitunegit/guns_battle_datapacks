@@ -35,6 +35,9 @@
     execute as @s[scores={UI.Shop.Page=0}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/0
     execute as @s[scores={UI.Shop.Page=1}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/1
     execute as @s[scores={UI.Shop.Page=2}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/2
+    execute as @s[scores={UI.Shop.Page=3}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/3
+    execute as @s[scores={UI.Shop.Page=4}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/4
+    execute as @s[scores={UI.Shop.Page=5}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/5
     execute as @s[scores={UI.Shop.Page=2001}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/2/1
     execute as @s[scores={UI.Shop.Page=2002}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/2/2
     execute as @s[scores={UI.Shop.Page=2003}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/2/3
@@ -44,6 +47,18 @@
     execute as @s[scores={UI.Shop.Page=1004}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/3/shot/_
     execute as @s[scores={UI.Shop.Page=1005}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/3/sniper/_
 
+# 購入処理
+    execute as @s[scores={UI.Shop.Page=4,UI.Shop.potion.1=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/4/1
+    execute as @s[scores={UI.Shop.Page=4,UI.Shop.potion.2=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/4/2
+    execute as @s[scores={UI.Shop.Page=4,UI.Shop.potion.3=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/4/3
+    execute as @s[scores={UI.Shop.Page=4,UI.Shop.potion.4=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/4/4
+    execute as @s[scores={UI.Shop.Page=4,UI.Shop.potion.5=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/4/5
+# 購入処理
+    execute as @s[scores={UI.Shop.Page=5,UI.Shop.grenade.1=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/5/1
+    execute as @s[scores={UI.Shop.Page=5,UI.Shop.grenade.2=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/5/2
+    execute as @s[scores={UI.Shop.Page=5,UI.Shop.grenade.3=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/5/3
+    execute as @s[scores={UI.Shop.Page=5,UI.Shop.grenade.4=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/5/4
+    execute as @s[scores={UI.Shop.Page=5,UI.Shop.grenade.5=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/5/5
 # 購入処理
     execute as @s[scores={UI.Shop.Page=1001,UI.Shop.Gun.1=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/3/sub/1
     execute as @s[scores={UI.Shop.Page=1001,UI.Shop.Gun.2=1..}] as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty run function guns_data:ui/menu/page/3/sub/2

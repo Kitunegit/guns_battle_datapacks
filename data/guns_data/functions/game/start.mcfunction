@@ -9,7 +9,7 @@
 # 通知
  tellraw @a {"text":"[System] 30秒の準備時間を開始します。"}
 # ショップ処理
- execute as @a run function guns_data:select
+ tag @s add nandemoUI
  scoreboard players set @a credit 2500
 # 無敵化
  effect give @a resistance 20 5 true

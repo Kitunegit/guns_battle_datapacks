@@ -1,5 +1,5 @@
 # 開いたトロッコはkillされないようにする
-    scoreboard players set @e[tag=shop_ui] UI.Shop.Timer -1
+    scoreboard players set @e[tag=shop_ui,sort=nearest,limit=1] UI.Shop.Timer -1
 
 # ページ
     scoreboard players set @s UI.Shop.Page 0

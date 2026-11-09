@@ -9,11 +9,12 @@
 # 通知
  tellraw @a {"text":"[System] 30秒の準備時間を開始します。"}
 # ショップ処理
- tag @s add nandemoUI
+ tag @a[team=Red] add nandemoUI
+ tag @a[team=Blue] add nandemoUI
  scoreboard players set @a credit 2500
 # 無敵化
- effect give @a resistance 20 5 true
- effect give @a slowness 20 8 true
+ effect give @a resistance 30 5 true
+ effect give @a slowness 30 8 true
  effect give @a health_boost infinite 4 true
  effect give @a regeneration infinite 1 true
  effect give @a instant_health 1 15 true

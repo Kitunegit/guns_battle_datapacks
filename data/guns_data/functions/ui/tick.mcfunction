@@ -1,9 +1,13 @@
 # プレイヤーにUIを表示
     execute as @a[tag=nandemoUI,tag=!ui_open] at @s run function guns_data:ui/summon
 
+# プレイヤーにテレポート
+    execute at @a[tag=nandemoUI,tag=!ui_open] if score @s UUID = @p UUID run tp @s @p
+
 # 時間経過でkill
     execute as @e[type=chest_minecart,tag=shop_ui] unless score @s UI.Shop.Timer matches -1 run scoreboard players add @s UI.Shop.Timer 1
-    kill @e[scores={UI.Shop.Timer=2..},tag=shop_ui]
+    execute as @e[type=interaction,tag=shop_ui] unless score @s UI.Shop.Timer matches -1 run scoreboard players add @s UI.Shop.Timer 1
+    kill @e[scores={UI.Shop.Timer=3..},tag=shop_ui]
 
 # クリック検知
     execute as @a[tag=ui_open] store result score @s UI.Shop.Blank.Click run clear @s light_gray_stained_glass_pane{ui:blank}

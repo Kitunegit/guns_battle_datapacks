@@ -1,25 +1,16 @@
-# 開いたトロッコはkillされないようにする
-    scoreboard players set @e[tag=shop_ui,sort=nearest,limit=1] UI.Shop.Timer -1
-
 # ページ
     scoreboard players set @s UI.Shop.Page 0
+
+# 開いたプレイヤーのUUIDを保存
+    execute positioned 0.0 0.0 0.0 run scoreboard players operation @e[type=marker,sort=nearest,limit=1] UUID = @s UUID
+# 専用のtag付け
+    tag @s add ui_open
+# 開けたトロッコを識別(wip)
+    execute anchored eyes positioned ~ ~1.1 ~ as @e[type=interaction,tag=shop_ui,distance=..2] run function guns_data:ui/menu/init
 
 # UI閉じ検知用の処理
     execute unless predicate guns_data:armor/helmet run item replace entity @s armor.head with minecraft:stone_button
     item modify entity @s armor.head guns_data:close_detector/add
-
-# 専用のtag付け
-    tag @s add ui_open
-
-# トロッコとプレイヤーを紐付ける
-    execute positioned ~ ~1.2 ~ run scoreboard players operation @e[type=chest_minecart,tag=shop_ui,sort=nearest,limit=1,scores={UI.Shop.Timer=-1}] UUID = @s UUID
-
-# 他のプレイヤーにトロッコを開けられないようにする
-    summon interaction ~ ~ ~ {Tags:["shop_ui"]}
-    ride @e[type=chest_minecart,tag=shop_ui,sort=nearest,limit=1,scores={UI.Shop.Timer=-1}] mount @e[type=interaction,tag=shop_ui,sort=nearest,limit=1]
-
-# インタラクションとプレイヤーの紐付け
-    scoreboard players operation @e[type=interaction,tag=shop_ui,sort=nearest,limit=1] UUID = @s UUID
 
 # チェストの中身を並べる
     scoreboard players operation $UUID Temporaty = @s UUID

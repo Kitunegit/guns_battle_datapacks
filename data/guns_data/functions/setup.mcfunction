@@ -42,6 +42,9 @@ scoreboard objectives add Death_timer dummy
 # シュルカーボックスを常時読み込む
     forceload add 0 0 0 0
 
+# UUID保存用marker
+    execute in overworld positioned 0.0 0.0 0.0 unless entity @e[type=marker,distance=..1] run summon marker ~ ~ ~ {UUID:[I; 2106,5308417,0,0]}
+
 # UIシステム用スコア
     scoreboard objectives add UI.Shop.Timer dummy "チェスト付きトロッコのkillタイマー"
     scoreboard objectives add UUID dummy "識別用ID"

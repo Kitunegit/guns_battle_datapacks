@@ -19,6 +19,8 @@
  effect give @a regeneration infinite 1 true
  effect give @a instant_health 1 15 true
  effect give @a saturation 1 50 true
+# キルカウントリセット
+ scoreboard players reset @a kill_count
 # アイテムリセット
  clear @a
  item replace entity @a container.9 with tacz:ammo_box{AllTypeCreative: 1b}

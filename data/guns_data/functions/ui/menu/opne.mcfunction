@@ -6,7 +6,7 @@
 # 専用のtag付け
     tag @s add ui_open
 # 開けたトロッコを識別(wip)
-    execute anchored eyes positioned ~ ~1.1 ~ as @e[type=interaction,tag=shop_ui,distance=..2] run function guns_data:ui/menu/init
+    execute anchored eyes positioned ~ ~1.1 ~ as @e[type=interaction,tag=shop_ui,tag=!UIusing,distance=..2] run function guns_data:ui/menu/init
 
 # UI閉じ検知用の処理
     execute unless predicate guns_data:armor/helmet run item replace entity @s armor.head with minecraft:stone_button

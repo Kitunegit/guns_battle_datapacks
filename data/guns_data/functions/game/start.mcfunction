@@ -18,6 +18,7 @@
  effect give @a health_boost infinite 4 true
  effect give @a regeneration infinite 1 true
  effect give @a instant_health 1 15 true
+ effect give @a saturation 1 50 true
 # アイテムリセット
  clear @a
  item replace entity @a container.9 with tacz:ammo_box{AllTypeCreative: 1b}

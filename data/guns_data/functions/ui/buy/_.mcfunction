@@ -8,4 +8,3 @@
     execute unless data storage ui: ReturnItems[] run data remove storage ui: ReturnItems
     execute if data storage ui: ReturnItems[] run function guns_data:ui/return/_
     tag @e[type=chest_minecart,tag=buy_ui] remove buy_ui
-    say a

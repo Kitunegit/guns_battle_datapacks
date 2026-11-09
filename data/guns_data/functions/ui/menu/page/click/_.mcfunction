@@ -24,7 +24,8 @@
 
 
 # 装備以外の商品受け渡し
-    execute if score @s UI.Shop.Armor.Buy.Yes matches 1.. as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty unless data entity @s Items[{Slot:11b}].tag{ui:armor_chain} unless data entity @s Items[{Slot:11b}].tag{ui:armor_iron} unless data entity @s Items[{Slot:11b}].tag{ui:armor_diamond} as @a if score @s UUID = $UUID Temporaty run function guns_data:ui/buy/_
+    execute if score @s UI.Shop.Armor.Buy.Yes matches 1.. as @e[type=chest_minecart,tag=shop_ui] if score @s UUID = $UUID Temporaty unless data entity @s Items[{Slot:11b}].tag{ui:armor_chain} unless data entity @s Items[{Slot:11b}].tag{ui:armor_iron} unless data entity @s Items[{Slot:11b}].tag{ui:armor_diamond} run tag @s add buy_ui
+    execute if score @s UI.Shop.Armor.Buy.Yes matches 1.. as @e[type=chest_minecart,tag=shop_ui,tag=buy_ui,limit=1] if score @s UUID = $UUID Temporaty as @a if score @s UUID = $UUID Temporaty run function guns_data:ui/buy/_
 
 # 購入時にページを戻す
     execute if score @s UI.Shop.Armor.Buy.No matches 1.. run scoreboard players set @s UI.Shop.Page 0

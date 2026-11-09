@@ -2,7 +2,7 @@
     execute as @a[tag=nandemoUI,tag=!ui_open] at @s run function guns_data:ui/summon
 
 # プレイヤーにテレポート
-    execute at @a[tag=nandemoUI,tag=!ui_open] if score @s UUID = @p UUID run tp @s @p
+    execute at @a[tag=nandemoUI,tag=ui_open] as @e[type=interaction,tag=shop_ui] if score @s UUID = @p UUID run tp @s @p
 
 # 時間経過でkill
     execute as @e[type=chest_minecart,tag=shop_ui] unless score @s UI.Shop.Timer matches -1 run scoreboard players add @s UI.Shop.Timer 1

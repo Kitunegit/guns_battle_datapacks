@@ -1,3 +1,3 @@
 # プレイヤーにチェスト付きトロッコを被せる
     #summon chest_minecart ~ ~1.2 ~ {CustomName:'{"text":"","italic":false,"color":"white"}',CustomNameVisible:false,Tags:["shop_ui"],CustomDisplayTile:1b,DisplayState:{Name:"minecraft:air"}}
-    summon interaction ~ ~1.1 ~ {width:1f,attack:{player:[I;2106,5308417,0,0],timestamp:0},Tags:["shop_ui"],Passengers:[{id:"chest_minecart",CustomDisplayTile:1b,DisplayState:{Name:"air"},Tags:["shop_ui"],CustomName:'{"text":"","italic":false,"color":"white"}',CustomNameVisible:false}]}
+    summon interaction ~ ~1.1 ~ {width:1f,attack:{player:[I;2106,5308417,0,0],timestamp:0},Tags:["shop_ui"],Passengers:[{id:"chest_minecart",CustomDisplayTile:1b,DisplayState:{Name:"air"},Tags:["shop_ui"],CustomName:'{"text":"","italic":false,"color":"white"}',CustomNameVisible:false,Invulnerable:true}]}

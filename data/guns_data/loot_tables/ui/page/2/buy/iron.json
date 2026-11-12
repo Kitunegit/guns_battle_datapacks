@@ -34,7 +34,7 @@
             },
             {
               "function": "minecraft:set_nbt",
-              "tag": "{price:1000,ui:blank,ui:armor_iron,faild:false}"
+              "tag": "{price:800,ui:blank,ui:armor_iron,faild:false}"
             }
           ]
         }

@@ -1,7 +1,6 @@
 execute as @a[team=Red] run spreadplayers 108 -24 0.5 1 true @s
 execute as @a[team=Blue] run spreadplayers 33 -25 0.5 1 true @s
-fill 188 -60 -14 191 -57 -18 barrier
-fill 189 -60 -15 191 -58 -17 air
-fill 147 -60 -19 144 -57 -15 barrier
-fill 146 -60 -16 144 -58 -18 air
-function guns_data:game/start
+fill 37 -60 -21 32 -55 -29 minecraft:barrier
+fill 36 -55 -22 32 -60 -28 air
+fill 105 -60 -28 110 -55 -20 minecraft:barrier
+fill 106 -55 -27 110 -60 -21 air

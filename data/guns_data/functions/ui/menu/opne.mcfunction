@@ -5,8 +5,8 @@
     execute positioned 0.0 0.0 0.0 run scoreboard players operation @e[type=marker,sort=nearest,limit=1] UUID = @s UUID
 # 専用のtag付け
     tag @s add ui_open
-# 開けたトロッコを識別(wip)
-    execute anchored eyes positioned ~ ~1.1 ~ as @e[type=interaction,tag=shop_ui,tag=!UIusing,distance=..2] run function guns_data:ui/menu/init
+# 開けたトロッコを識別
+    execute anchored eyes positioned ~ ~1.1 ~ as @e[type=interaction,tag=shop_ui,tag=!UIusing,distance=..1] run function guns_data:ui/menu/init
 
 # UI閉じ検知用の処理
     execute unless predicate guns_data:armor/helmet run item replace entity @s armor.head with minecraft:stone_button

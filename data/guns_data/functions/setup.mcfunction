@@ -45,6 +45,10 @@ scoreboard objectives add Death_timer dummy
 # UUID保存用marker
     execute in overworld positioned 0.0 0.0 0.0 unless entity @e[type=marker,distance=..1] run summon marker ~ ~ ~ {UUID:[I; 2106,5308417,0,0]}
 
+# Areaモード用スコア
+    scoreboard objectives add area_count dummy
+    scoreboard objectives add area_sfx dummy
+
 # UIシステム用スコア
     scoreboard objectives add UI.Shop.Timer dummy "チェスト付きトロッコのkillタイマー"
     scoreboard objectives add UUID dummy "識別用ID"

@@ -1,5 +1,11 @@
 # 出来る限りコメントアウトします
 
+# ステージ
+    execute if data storage game: setting{stage:district} run function guns_data:game/asset/2v2_district
+    execute if data storage game: setting{stage:wood} run function guns_data:game/asset/2v2_wood
+    execute if data storage game: setting{stage:casuga} run function guns_data:game/asset/4v4_casuga
+    execute if data storage game: setting{stage:pizza} run function guns_data:game/asset/4v4_pizza
+
 # 非参加者をスぺクに変更
  tag @a[gamemode=spectator,team=!Red,team=!Blue] add spec
  gamemode adventure @a[tag=!spec]

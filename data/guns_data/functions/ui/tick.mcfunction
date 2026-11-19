@@ -10,39 +10,39 @@
     kill @e[scores={UI.Shop.Timer=3..},tag=shop_ui]
 
 # クリック検知
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Blank.Click run clear @s light_gray_stained_glass_pane{ui:blank}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Blank1.Click run clear @s heart_of_the_sea{ui:blank}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.Click run clear @s tacz:modern_kinetic_gun{ui:gun}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Armor.Click run clear @s iron_chestplate{ui:armor}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Armor.Chain.Click run clear @s chainmail_chestplate{ui:armor_chain}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Armor.Diamond.Click run clear @s diamond_chestplate{ui:armor_diamond}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Armor.Iron.Click run clear @s iron_chestplate{ui:armor_iron}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Armor.Buy.No run clear @s red_candle{ui:no}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Armor.Buy.Yes run clear @s lime_candle{ui:yes}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.sub run clear @s tacz:modern_kinetic_gun{ui:gun_sub}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.assault run clear @s tacz:modern_kinetic_gun{ui:gun_assault}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.handgun run clear @s tacz:modern_kinetic_gun{ui:gun_hand}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.sniper run clear @s tacz:modern_kinetic_gun{ui:gun_sniper}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.shotgun run clear @s tacz:modern_kinetic_gun{ui:gun_shot}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.1 run clear @s tacz:modern_kinetic_gun{ui:1}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.2 run clear @s tacz:modern_kinetic_gun{ui:2}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.3 run clear @s tacz:modern_kinetic_gun{ui:3}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.4 run clear @s tacz:modern_kinetic_gun{ui:4}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.Gun.5 run clear @s tacz:modern_kinetic_gun{ui:5}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.1 run clear @s potion{ui:1}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.2 run clear @s splash_potion{ui:2}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.3 run clear @s splash_potion{ui:3}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.4 run clear @s lrtactical:consumable{ui:4}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.potion.5 run clear @s tacz:modern_kinetic_gun{ui:5}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.1 run clear @s lrtactical:throwable{ui:1}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.2 run clear @s lrtactical:throwable{ui:2}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.3 run clear @s lrtactical:throwable{ui:3}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.4 run clear @s lrtactical:throwable{ui:4}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade.5 run clear @s lrtactical:throwable{ui:5}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.back run clear @s ender_pearl{ui:back}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.assist run clear @s potion{ui:assist}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.potion run clear @s potion{ui:potion}
-    execute as @a[tag=ui_open] store result score @s UI.Shop.grenade run clear @s lrtactical:throwable{ui:grenade}
+    execute as @a store result score @s UI.Shop.Blank.Click run clear @s light_gray_stained_glass_pane{ui:blank}
+    execute as @a store result score @s UI.Shop.Blank1.Click run clear @s heart_of_the_sea{ui:blank}
+    execute as @a store result score @s UI.Shop.Gun.Click run clear @s tacz:modern_kinetic_gun{ui:gun}
+    execute as @a store result score @s UI.Shop.Armor.Click run clear @s iron_chestplate{ui:armor}
+    execute as @a store result score @s UI.Shop.Armor.Chain.Click run clear @s chainmail_chestplate{ui:armor_chain}
+    execute as @a store result score @s UI.Shop.Armor.Diamond.Click run clear @s diamond_chestplate{ui:armor_diamond}
+    execute as @a store result score @s UI.Shop.Armor.Iron.Click run clear @s iron_chestplate{ui:armor_iron}
+    execute as @a store result score @s UI.Shop.Armor.Buy.No run clear @s red_candle{ui:no}
+    execute as @a store result score @s UI.Shop.Armor.Buy.Yes run clear @s lime_candle{ui:yes}
+    execute as @a store result score @s UI.Shop.Gun.sub run clear @s tacz:modern_kinetic_gun{ui:gun_sub}
+    execute as @a store result score @s UI.Shop.Gun.assault run clear @s tacz:modern_kinetic_gun{ui:gun_assault}
+    execute as @a store result score @s UI.Shop.Gun.handgun run clear @s tacz:modern_kinetic_gun{ui:gun_hand}
+    execute as @a store result score @s UI.Shop.Gun.sniper run clear @s tacz:modern_kinetic_gun{ui:gun_sniper}
+    execute as @a store result score @s UI.Shop.Gun.shotgun run clear @s tacz:modern_kinetic_gun{ui:gun_shot}
+    execute as @a store result score @s UI.Shop.Gun.1 run clear @s tacz:modern_kinetic_gun{ui:1}
+    execute as @a store result score @s UI.Shop.Gun.2 run clear @s tacz:modern_kinetic_gun{ui:2}
+    execute as @a store result score @s UI.Shop.Gun.3 run clear @s tacz:modern_kinetic_gun{ui:3}
+    execute as @a store result score @s UI.Shop.Gun.4 run clear @s tacz:modern_kinetic_gun{ui:4}
+    execute as @a store result score @s UI.Shop.Gun.5 run clear @s tacz:modern_kinetic_gun{ui:5}
+    execute as @a store result score @s UI.Shop.potion.1 run clear @s potion{ui:1}
+    execute as @a store result score @s UI.Shop.potion.2 run clear @s splash_potion{ui:2}
+    execute as @a store result score @s UI.Shop.potion.3 run clear @s splash_potion{ui:3}
+    execute as @a store result score @s UI.Shop.potion.4 run clear @s lrtactical:consumable{ui:4}
+    execute as @a store result score @s UI.Shop.potion.5 run clear @s tacz:modern_kinetic_gun{ui:5}
+    execute as @a store result score @s UI.Shop.grenade.1 run clear @s lrtactical:throwable{ui:1}
+    execute as @a store result score @s UI.Shop.grenade.2 run clear @s lrtactical:throwable{ui:2}
+    execute as @a store result score @s UI.Shop.grenade.3 run clear @s lrtactical:throwable{ui:3}
+    execute as @a store result score @s UI.Shop.grenade.4 run clear @s lrtactical:throwable{ui:4}
+    execute as @a store result score @s UI.Shop.grenade.5 run clear @s lrtactical:throwable{ui:5}
+    execute as @a store result score @s UI.Shop.back run clear @s ender_pearl{ui:back}
+    execute as @a store result score @s UI.Shop.assist run clear @s potion{ui:assist}
+    execute as @a store result score @s UI.Shop.potion run clear @s potion{ui:potion}
+    execute as @a store result score @s UI.Shop.grenade run clear @s lrtactical:throwable{ui:grenade}
 
 # ページ設定
     execute as @a[tag=ui_open,scores={UI.Shop.Gun.Click=1..}] at @s run scoreboard players set @s UI.Shop.Page 1

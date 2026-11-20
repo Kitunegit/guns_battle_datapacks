@@ -6,3 +6,6 @@ execute as @a at @s run title @s actionbar [{"bold":true,"color":"white","text":
     function guns_data:game/system/area/tick
 # UI常時実行処理
     function guns_data:ui/tick
+
+# トーナメントモードの時の独自処理
+execute if score $Phase Game.Phase matches 10 run function guns_data:game/tornament/tick

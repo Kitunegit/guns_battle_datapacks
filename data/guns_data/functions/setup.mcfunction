@@ -49,6 +49,17 @@ scoreboard objectives add Death_timer dummy
     scoreboard objectives add area_count dummy
     scoreboard objectives add area_sfx dummy
 
+# システムフェーズ管理
+    scoreboard objectives add Game.Phase dummy
+    scoreboard players set $Phase Game.Phase 0
+
+# トーナメントモード
+    bossbar add timer "ラウンド開始まで..."
+    scoreboard objectives add Game.Round dummy
+    scoreboard players set $Round Game.Round 0
+    scoreboard objectives add Game.WinCount dummy
+    scoreboard players set $Red Game.WinCount 0
+    scoreboard players set $Blue Game.WinCount 0
 # UIシステム用スコア
     scoreboard objectives add UI.Shop.Timer dummy "チェスト付きトロッコのkillタイマー"
     scoreboard objectives add UUID dummy "識別用ID"

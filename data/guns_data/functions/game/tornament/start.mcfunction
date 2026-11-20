@@ -40,9 +40,10 @@ execute as @a[tag=Red,tag=!death] run scoreboard players add $Red remaining 1
 
 # ボスバー
 bossbar set timer players @a
-bossbar set timer max 45
-bossbar set timer value 45
+bossbar set timer max 900
+bossbar set timer value 900
 bossbar set timer name "Round 1: 購入フェーズ"
+scoreboard players set $Time Game.Phase 900
 
 scoreboard players set $Red Game.WinCount 0
 scoreboard players set $Blue Game.WinCount 0

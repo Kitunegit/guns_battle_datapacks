@@ -19,10 +19,7 @@ clear @a
 execute as @a run spreadplayers -2.5 -16.5 1 4 under -60 true @s
 
 # ボスバー
-bossbar set timer players @a
-bossbar set timer max 45
-bossbar set timer value 45
-bossbar set timer name "Round 1: 購入フェーズ"
+bossbar set timer players
 
 scoreboard players set $Red Game.WinCount 0
 scoreboard players set $Blue Game.WinCount 0

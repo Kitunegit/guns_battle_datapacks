@@ -27,3 +27,8 @@ scoreboard players set $Phase Game.Phase 11
 scoreboard players set $Time Game.Phase 2000
 
 worldborder set 15 100
+
+bossbar set timer players @a
+bossbar set timer max 2000
+bossbar set timer value 2000
+bossbar set timer name "Round 1: 戦闘フェーズ"

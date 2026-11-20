@@ -2,6 +2,8 @@
 # Red陣営 = Game.Red
 # Blue陣営 = Game.Blue
 
+ function guns_data:game/asset/4v4_pizza
+
 # 非参加者をスぺクに変更
  tag @a[gamemode=spectator,tag=!Game.Red,tag=!Game.Blue] add spec
  gamemode adventure @a[tag=!spec]

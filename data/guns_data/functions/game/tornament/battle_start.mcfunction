@@ -25,3 +25,5 @@ fill 226 -54 22 226 -52 22 air
 
 scoreboard players set $Phase Game.Phase 11
 scoreboard players set $Time Game.Phase 2000
+
+worldborder set 15 100

@@ -52,3 +52,6 @@ scoreboard players set $Blue Game.WinCount 0
 
 # フェーズセット
 scoreboard players set $Phase Game.Phase 10
+
+worldborder center 71.5 -24.0
+worldborder set 80

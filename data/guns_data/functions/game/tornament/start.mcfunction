@@ -2,6 +2,10 @@
 # Red陣営 = Game.Red
 # Blue陣営 = Game.Blue
 
+
+tag @a[team=Blue] add Game.Blue
+tag @a[team=Red] add Game.Red
+
  function guns_data:game/asset/4v4_pizza
 
 # 非参加者をスぺクに変更

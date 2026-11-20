@@ -16,7 +16,7 @@
 # ショップ処理
  tag @a[tag=Game.Red] add nandemoUI
  tag @a[tag=Game.Blue] add nandemoUI
- scoreboard players set @a credit 2500
+ scoreboard players set @a credit 1000
 # 無敵化
  effect give @a resistance 30 5 true
  effect give @a slowness 30 8 true
